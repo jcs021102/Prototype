@@ -1,0 +1,12 @@
+{
+	"Web Margin": {
+		"prefix": "m",
+		"body": "max-w-7xl mx-auto",
+		"description": "MSE's Body Margin"
+	},
+	"Euro Symbol": {
+		"prefix": "eu",
+		"body": "&euro;",
+		"description": "Euro Symbol"
+	}
+}

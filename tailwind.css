@@ -1,0 +1,25 @@
+.bg-blue-1 {
+    background-color: #173b63;
+}
+.bg-blue-1:hover {
+    background-color: #e6e7e9;
+}
+
+.bg-white-1 {
+    background-color: #fafafa;
+}
+
+.text-white-1 {
+    color: #fafafa;
+}
+.text-white-1:hover {
+    color: #173b63;
+}
+
+.text-blue-1 {
+    color: #173b63;
+    font-weight: 600;
+}
+.text-blue-1:hover {
+    border-color: #173b63;
+}
