@@ -143,7 +143,7 @@ let statistics_data = {
         data: [10, 12, 11, 13] // Dummy data for Price To Sales
     }]
 }
-
+Highcharts.chart('dividends-graph', statistics_data);
 Highcharts.chart('main-graph', main_graph_price_data);
 Highcharts.chart('statistics-graph', statistics_data);
 //Highcharts.chart('high-low', candlestick_chart_data);
@@ -231,9 +231,12 @@ function smooth_scroll() {
     document.querySelectorAll('button[data-scroll]').forEach(button => {
         button.addEventListener('click', function () {
             const targetId = this.getAttribute('data-scroll');
-            document.querySelector(targetId).scrollIntoViewIfNeeded(
-                { behavior: 'smooth' },
-            );
+            document.querySelector(targetId).scrollIntoView({
+                alignToTop: true,
+                behavior: 'smooth',
+                block: 'center',
+                inline: 'start' 
+            });
         });
     });
 }
