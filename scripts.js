@@ -128,7 +128,7 @@ let statistics_data = {
         text: 'Price/Earnings To Price/Sales'
     },
     xAxis: {
-        categories: ['Q1 "21', 'Q2 "21', 'Q1 "22', 'Q2 "22']
+        categories: ['Q3 "23', 'Q4 "23', 'Q1 "24', 'Q2 "24']
     },
     yAxis: {
         title: {
@@ -146,7 +146,7 @@ let statistics_data = {
 Highcharts.chart('dividends-graph', statistics_data);
 Highcharts.chart('main-graph', main_graph_price_data);
 Highcharts.chart('statistics-graph', statistics_data);
-//Highcharts.chart('high-low', candlestick_chart_data);
+Highcharts.chart('high-low', candlestick_chart_data);
 
 function updateSeriesData(chart, newData, targetDiv) {
     chart.setTitle({ text: document.getElementById(targetDiv).innerText });
